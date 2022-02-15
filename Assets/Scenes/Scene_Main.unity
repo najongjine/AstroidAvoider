@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 27271949}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2015191966}
+        m_TargetAssemblyTypeName: GameOverHandler, Assembly-CSharp
+        m_MethodName: ContinueButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &27271949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,7 +602,7 @@ MonoBehaviour:
   asteroidPrefabs:
   - {fileID: 7947718185305324468, guid: e91f81c7075663446bfd8bcca8d34893, type: 3}
   - {fileID: 1673153413601548371, guid: 806104808a025654ca69a300b797db56, type: 3}
-  secondsBetweenAsteroids: 1.5
+  secondsBetweenAsteroids: 0.5
   forceRange: {x: 4, y: 6}
 --- !u!4 &281301187
 Transform:
@@ -845,7 +857,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1045,6 +1057,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &905718069 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7772946836370320825, guid: 2814d623f0c744145accd4b32469cfcc, type: 3}
+  m_PrefabInstance: {fileID: 7772946836260959132}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1003026016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1832,6 +1849,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa0b1d9ac67b26c4298bf172583624f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 905718069}
+  continueButton: {fileID: 27271948}
   gameOverText: {fileID: 69162331}
   scoreSystem: {fileID: 83302374}
   gameOverDisplay: {fileID: 463193671}
